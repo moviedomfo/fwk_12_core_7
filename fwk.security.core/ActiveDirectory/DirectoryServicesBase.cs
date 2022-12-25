@@ -83,8 +83,7 @@ namespace Fwk.Security.ActiveDirectory
         /// <summary>
         ///Ej: 
         ///LDAP://domain/DC=xxx,DC=com
-        ///LDAP://CORRSF71NT13.Datacom.org/DC=Datacom,DC=org
-        ///LDAP://Pc1.alcoDatacom.com.ar/OU=Datacom Sabattini,dc=alcoDatacom,dc=com,dc=ar
+
         /// </summary>
         public String LDAPPath
         {
@@ -160,51 +159,7 @@ namespace Fwk.Security.ActiveDirectory
             return list;
         }
 
-        ///// <summary>
-        ///// Busca la lista de dominios en una base de datos
-        ///// </summary>
-        ///// <param name="cnnStringName">Nombre de la cadena de coneccion configurada</param>
-        ///// <returns>Lista de DomainsUrl</returns>
-        //public static List<DomainUrlInfo> DomainsUrl_GetList(string cnnString)
-        //{
-        //    return DomainsUrl_GetList2(System.Configuration.ConfigurationManager.ConnectionStrings[cnnStringName].ConnectionString);
-        //}
-        ///// <summary>
-        ///// Busca la lista de dominios en una base de datos.- A diferencia de DomainsUrl_GetList. Este metodo recive como parametro 
-        ///// la cadena de coneccion y no su nombre de App.config
-        ///// </summary>
-        ///// <param name="cnnString">Cadena de coneccion</param>
-        ///// <returns>Lista de DomainsUrl</returns>
-        //public static List<DomainUrlInfo> DomainsUrl_GetList2(string cnnString)
-        //{
-
-        //    List<DomainUrlInfo> wDomainUrlInfoList = new List<DomainUrlInfo>();
-        //    try
-        //    {
-        //        using (SqlDomainURLDataContext dc = new SqlDomainURLDataContext(cnnString))
-        //        {
-        //            IEnumerable<DomainUrlInfo> liste = from s in dc.DomainsUrls
-        //                                        select new DomainUrlInfo
-        //                                            {
-        //                                                DomainName = s.DomainName,
-        //                                                LDAPPath = s.LDAPPath,
-        //                                                Id = s.DomainID,
-        //                                                SiteName = s.SiteName,
-        //                                                DomainDN = s.DomainDN
-        //                                            };
-
-        //            return liste.ToList<DomainUrlInfo>();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Fwk.Exceptions.TechnicalException te = new Fwk.Exceptions.TechnicalException("Error al intentar obtener la lista de dominios desde la base de datos: ", ex);
-        //        LDAPHelper.SetError(te);
-        //        te.ErrorId = "15004";
-        //        throw te;
-        //    }
-        //}
-
+       
 
         /// <summary>
         /// Retorna todos los DolmainUrl por medio de un sp usp_GetDomainsUrl_All que lee de bd encriptada
@@ -263,7 +218,7 @@ namespace Fwk.Security.ActiveDirectory
         /// Retorna DolmainUrl por medio de un sp usp_GetDomainsUrl_ByDomainName que lee de bd encriptada
         /// </summary>
         /// <param name="cnnStringName">Nombre de la cadena de cnn</param>
-        /// <param name="domainName">ej Allus-Ar</param>
+        /// <param name="domainName">ej rrrrrr-Ar</param>
         /// <returns></returns>
         public static DomainUrlInfo DomainsUrl_Get_FromSp(string cnnString, string domainName)
         {

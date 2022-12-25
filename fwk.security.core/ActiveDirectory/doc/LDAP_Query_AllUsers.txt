@@ -33,7 +33,7 @@ accountExpires = System.__ComObject
 logonCount = 3455
 sAMAccountName = JRomero
 sAMAccountType = 805306368
-userPrincipalName = JRomero@Datacom.org
+userPrincipalName = JRomero@sd.org
 lockoutTime = System.__ComObject
 objectCategory = CN=Person,CN=Schema,CN=Configuration,DC=Datacom,DC=org
 lastLogonTimestamp = System.__ComObject
@@ -45,17 +45,17 @@ nTSecurityDescriptor = System.__ComObject
 ------------------------------------------------------------------------------------------------------------------------------
 
 objectClass			= System.Object[]
-cn					= CORRSF71TS01
+cn					= pelsoft
 userCertificate		= System.Byte[]
-distinguishedName	= CN=CORRSF71TS01,OU=Domain Controllers,DC=Datacom,DC=org
+distinguishedName	= CN=pelsoft,OU=Domain Controllers,DC=pepe,DC=org
 instanceType		= 4
 whenCreated			= 13/08/2004 07:02:58 p.m.
 whenChanged			= 12/11/2008 12:24:42 a.m.
-displayName			= CORRSF71TS01$
+displayName			= pelsoft$
 uSNCreated			= System.__ComObject
 memberOf			= CN=Publicadores de certificados,CN=Users,DC=Datacom,DC=org
 uSNChanged			= System.__ComObject
-name				= CORRSF71TS01
+name				= pelsoft
 
 objectGUID			= System.Byte[]
 userAccountControl	= 532480
@@ -71,18 +71,18 @@ primaryGroupID		= 516
 objectSid = System.Byte[]
 accountExpires = System.__ComObject
 logonCount = 207
-sAMAccountName			= CORRSF71TS01$
+sAMAccountName			= pelsoft$
 sAMAccountType			= 805306369
 operatingSystem			= Windows Server 2003
 operatingSystemVersion		= 5.2 (3790)
 operatingSystemServicePack = Service Pack 2
-serverReferenceBL		= CN=CORRSF71TS01,CN=Servers,CN=RosarioSantaFe71,CN=Sites,CN=Configuration,DC=Datacom,DC=org
-dNSHostName				= corrsf71ts01.Datacom.org
-rIDSetReferences		= CN=RID Set,CN=CORRSF71TS01,OU=Domain Controllers,DC=Datacom,DC=org
+serverReferenceBL		= CN=pelsoft,CN=Servers,CN=sdf,CN=Sites,CN=Configuration,DC=Datacom,DC=org
+dNSHostName				= pelsoft.Datacom.org
+rIDSetReferences		= CN=RID Set,CN=pelsoft,OU=Domain Controllers,DC=Datacom,DC=org
 servicePrincipalName = System.Object[]
 objectCategory = CN=Computer,CN=Schema,CN=Configuration,DC=Datacom,DC=org
 isCriticalSystemObject = True
-frsComputerReferenceBL = CN=CORRSF71TS01,CN=Domain System Volume (SYSVOL share),CN=File Replication Service,CN=System,DC=Datacom,DC=org
+frsComputerReferenceBL = CN=pelsoft,CN=Domain System Volume (SYSVOL share),CN=File Replication Service,CN=System,DC=Datacom,DC=org
 dSCorePropagationData = System.Object[]
 lastLogonTimestamp = System.__ComObject
 nTSecurityDescriptor = System.__ComObject
