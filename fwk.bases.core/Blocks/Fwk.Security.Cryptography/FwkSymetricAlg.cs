@@ -5,6 +5,8 @@ using System.Text;
 using System.Security.Cryptography;
 using System.IO;
 using Fwk.Exceptions;
+using Fwk.HelperFunctions;
+
 
 namespace Fwk.Security.Cryptography
 {
@@ -182,7 +184,7 @@ namespace Fwk.Security.Cryptography
             
             if (!string.IsNullOrEmpty(keyFileName))
             {
-                Fwk.HelperFunctions.FileFunctions.SaveBinaryFile(keyFileName, Convert.FromBase64String(GeneratetNewK()));
+                FileFunctions.SaveBinaryFile(keyFileName, Convert.FromBase64String(GeneratetNewK()));
               
             }
             return keyFileName;

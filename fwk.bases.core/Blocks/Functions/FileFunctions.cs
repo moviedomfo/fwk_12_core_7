@@ -33,7 +33,7 @@ namespace Fwk.HelperFunctions
             reader.Dispose();
             return list.ToString();
         }
-        
+
 
         /// <summary>
         /// Abre un archivo de texto
@@ -45,8 +45,8 @@ namespace Fwk.HelperFunctions
             using (StreamReader sr = File.OpenText(pFileName))
             {
                 string retString = sr.ReadToEnd();
-                
-               
+
+
 
                 return retString;
             }
@@ -75,7 +75,7 @@ namespace Fwk.HelperFunctions
             using (StreamWriter sw = File.AppendText(pFileName))
             {
                 sw.Write(pContent);
-              
+
             }
         }
 
@@ -202,7 +202,7 @@ namespace Fwk.HelperFunctions
             /// </summary>
             public static string OpenAllXmlFilesFilter
             {
-                get { return OpenFilterEnums._OpenAllXmlFilesFilter; }
+                get { return _OpenAllXmlFilesFilter; }
 
             }
 
@@ -213,7 +213,7 @@ namespace Fwk.HelperFunctions
             /// </summary>
             public static string OpenXmlFilter
             {
-                get { return OpenFilterEnums._OpenXmlFilter; }
+                get { return _OpenXmlFilter; }
 
             }
             static string _OpenAssembliesFilter = "DLL Files (*.dll;*.exe)|*.dll;*.exe|All Files (*.*)|*.*";
@@ -223,7 +223,7 @@ namespace Fwk.HelperFunctions
             /// </summary>
             public static string OpenAssembliesFilter
             {
-                get { return OpenFilterEnums._OpenAssembliesFilter; }
+                get { return _OpenAssembliesFilter; }
 
             }
 
