@@ -207,7 +207,7 @@ public class DateFunctions
         /// <Author>Andres Aguirre</Author>
         public static DateTime GetLastDayOfMonth(Int16 pMonth, Int16 pYear)
         {
-            return GetFirstDayOfMonth(pYear, pMonth).AddMonths(1).AddTicks(-1);
+            return GetFirstDayOfMonth(pMonth,pYear).AddMonths(1).AddTicks(-1);
         }
 
         /// <summary>
